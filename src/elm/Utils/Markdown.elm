@@ -28,7 +28,7 @@ customHtmlInline inline =
     case inline of
         Image url maybeTitle inlines ->
             styled figure
-                [ Css.margin (Css.rem 1) ]
+                [ Css.margin (Css.rem 1), Css.displayFlex, Css.flexDirection Css.column, Css.alignItems Css.center ]
                 []
                 [ styled img
                     [ Css.maxWidth (Css.pct 100) ]
